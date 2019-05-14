@@ -5,11 +5,16 @@ import Illustrations from "./components/Illustrations";
 import LoaderAndAnimations from "./components/LoaderAndAnimations";
 import Mascot from "./components/Mascot";
 import Wallpapers from "./components/Wallpapers";
+import NotFound from "./components/NotFound";
 
 export default {
     mode:'history',
     linkActiveClass:'font-bold',
     routes:[
+        {
+          path:'*',
+          component:NotFound
+        },
         {
             path:'/',
             component:Logo
